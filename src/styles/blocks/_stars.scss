@@ -3,8 +3,8 @@
   gap: 4px;
 
   &__star {
-    width: 16px;
-    height: 16px;
+    width: $size-small;
+    height: $size-small;
     background-image: url('../images/star-active.svg');
     background-size: contain;
     background-repeat: no-repeat;
