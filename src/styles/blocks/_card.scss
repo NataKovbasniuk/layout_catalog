@@ -1,8 +1,9 @@
 .card {
   width: $card-width;
-  padding: 16px;
+  height: $card-height;
+  padding: $size-small;
   border: 1px solid $border-color;
-  border-radius: 8px;
+  border-radius: $border-medium;
   background: $white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 
@@ -12,7 +13,7 @@
   will-change: transform;
 
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.03);
     z-index: 1;
   }
 
@@ -23,9 +24,9 @@
   }
 
   &__title {
-    font-size: 14px;
+    font-size: $font-size-medium;
     font-weight: 500;
-    margin: 0 0 8px;
+    margin: 0 0 $border-medium;
     color: $dark-text;
     transition: color $transition;
   }
@@ -36,7 +37,7 @@
   }
 
   &__code {
-    font-size: 12px;
+    font-size: $font-size-small;
     color: $secondary-text;
     margin-bottom: $margin-small;
   }
@@ -49,7 +50,7 @@
   }
 
   &__reviews-count {
-    font-size: 12px;
+    font-size: $font-size-small;
     color: $secondary-text;
   }
 
@@ -57,16 +58,16 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 16px;
+    margin-bottom: $margin-small;
   }
 
   &__price-label {
-    font-size: 12px;
+    font-size: $font-size-small;
     color: $secondary-text;
   }
 
   &__price-value {
-    font-size: 16px;
+    font-size: $size-small;
     font-weight: 700;
     color: $dark-text;
   }
@@ -75,10 +76,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: $padding-large;
     width: 100%;
 
-    border-radius: 6px;
+    border-radius: $border-small;
     border: 1px solid $main-accent;
 
     background: $main-accent;

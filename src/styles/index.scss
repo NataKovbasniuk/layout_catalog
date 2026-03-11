@@ -15,7 +15,7 @@ body {
 }
 
 .catalog {
-  padding: 50px $padding-large;
+  padding: $padding-big $padding-large;
 
   &__grid {
     display: grid;
